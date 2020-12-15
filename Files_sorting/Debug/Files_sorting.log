@@ -1,8 +1,2 @@
 ﻿  Files_sorting.cpp
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(14,9): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(31,26): warning C4101: name2: неиспользованная локальная переменная
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(30,22): warning C4101: f2: неиспользованная локальная переменная
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(30,16): warning C4101: f1: неиспользованная локальная переменная
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(31,17): warning C4101: name1: неиспользованная локальная переменная
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(31,35): warning C4101: name3: неиспользованная локальная переменная
-C:\Users\Влад\source\repos\Files_sorting\Files_sorting\Files_sorting.cpp(30,28): warning C4101: f3: неиспользованная локальная переменная
+  Files_sorting.vcxproj -> C:\Users\Влад\source\repos\Files_sorting\Debug\Files_sorting.exe
