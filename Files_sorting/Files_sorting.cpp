@@ -1,26 +1,9 @@
 ﻿#include <iostream>
-#include <stdio.h>
 #include <fstream>
 #include <string>
+#include "direct_merge.h"
 
 using namespace std;
-
-///Сортировка прямым слиянием на трёх файлах
-void direct_merge(const char* name, const char* name1, const char* name2, const char* name3)
-{
-    char temp[50];
-    ifstream origin(name);
-    ofstream file(name1);
-    if (!origin.is_open() || !file.is_open())
-        cout << "Ошибка!!! Невозможно открыть файл!!!\n";
-    else
-    {
-        origin >> temp;
-        origin.close();
-        file << temp;
-        file.close();
-    }
-}
 
 ///Функция отвечающая за инициализацию файла случайными числами
 void create_random_file(const char* name) //В качестве аргумента принемает название файла в который будут записаны значения
@@ -50,7 +33,14 @@ int main()
     const char* name3 = "temp3.txt";  //
     create_random_file(name);        //создаём исходный файл со случайными числами
 
-    direct_merge(name, name1, name2, name3);
+    ifstream origin(name);
+    ofstream file1(name1), file2(name2);
+
+    split(origin, file1, file2);
+
+    origin.close();
+    file1.close();
+    file2.close();
 
     return 0;
 }
